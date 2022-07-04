@@ -1,0 +1,54 @@
+:root {
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --secondary-color: #14213d;
+}
+
+.dark {
+  --background-color: #000000;
+  --font-color: #ffffff;
+  --secondary-color: #e5e5e5;
+}
+
+.app {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  color: var(--font-color);
+  font-weight: normal;
+}
+
+.author {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+footer {
+  opacity: 0.5;
+  padding-top: 0.5rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 11px;
+  color: #aeaeae;
+  line-height: 16px;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: #969696;
+  text-decoration: none;
+  font-weight: bold;
+}

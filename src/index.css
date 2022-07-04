@@ -1,0 +1,19 @@
+body,
+html {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
