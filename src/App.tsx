@@ -13,17 +13,23 @@ function App() {
 
   const [hitokoto, setHitokoto] = useState<Hitokoto>()
 
-  useEffect(() => {
+  const update = () =>
     fetch('https://v1.hitokoto.cn/')
       .then(response => response.json())
       .then(data => setHitokoto(data))
+
+  useEffect(() => {
+    update()
   }, [])
 
   return (
     <div className={`app ${isDark ? 'dark' : ''}`}>
-      <h1 id='hitokoto'>{hitokoto?.hitokoto}</h1>
+      <h1 id='hitokoto' onClick={update}>
+        {hitokoto?.hitokoto}
+      </h1>
       <div className='author'>
-        — <span id='from_who'>{hitokoto?.from_who}</span>「<span id='from'>{hitokoto?.from}</span>」
+        — <span id='from_who'>{hitokoto?.from_who}</span>「
+        <span id='from'>{hitokoto?.from}</span>」
       </div>
       <footer>
         Powered by
