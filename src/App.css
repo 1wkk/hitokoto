@@ -1,28 +1,33 @@
 :root {
-  --background-color: #ffffff;
-  --font-color: #000000;
-  --secondary-color: #14213d;
+  --background-color: #FFFFFF;
+  --font-color: #5F6368;
+  --secondary-color: #5F6368;
+  --hover-color: #202124;
 }
 
 .dark {
-  --background-color: #000000;
-  --font-color: #ffffff;
-  --secondary-color: #e5e5e5;
+  --background-color: #202124;
+  --font-color: #E8EAED;
+  --secondary-color: #969BA1;
+  --hover-color: #E8EAED;
 }
 
 .app {
-  background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+
+  background-color: var(--background-color);
 }
 
 h1 {
   color: var(--font-color);
   font-weight: normal;
+  cursor: pointer;
 }
 
 .author {
@@ -30,25 +35,33 @@ h1 {
   font-size: 1rem;
 }
 
+.author:hover {
+  color: var(--hover-color);
+}
+
 footer {
-  opacity: 0.5;
-  padding-top: 0.5rem;
   position: absolute;
   right: 15px;
   bottom: 15px;
+
   text-align: right;
-  font-weight: 500;
-  font-size: 11px;
-  color: #aeaeae;
+
+  opacity: 0.5;
+  color: var(--secondary-color);
+
+  font-size: 12px;
+  font-weight: bold;
   line-height: 16px;
+
+  cursor: pointer;
 }
 
 footer:hover {
   opacity: 1;
+
+  color: var(--hover-color);
 }
 
 footer a {
-  color: #969696;
-  text-decoration: none;
-  font-weight: bold;
+  color: unset;
 }
