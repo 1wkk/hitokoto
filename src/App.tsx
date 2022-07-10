@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import usePreferredDark from './usePreferredDark'
-
+import { Helmet } from 'react-helmet'
 interface Hitokoto {
   hitokoto: string
   from: string
@@ -24,6 +24,9 @@ function App() {
 
   return (
     <div className={`app ${isDark ? 'dark' : ''}`}>
+      <Helmet>
+        <link rel="icon" type="image/svg+xml" href={`/src/${isDark ? 'dark' : 'light'}.svg`} />
+      </Helmet>
       <h1 id='hitokoto' onClick={update}>
         {hitokoto?.hitokoto}
       </h1>
