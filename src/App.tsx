@@ -25,7 +25,7 @@ function App() {
   return (
     <div className={`app ${isDark ? 'dark' : ''}`}>
       <Helmet>
-        <link rel="icon" type="image/svg+xml" href={`/src/${isDark ? 'dark' : 'light'}.svg`} />
+        <link rel="icon" type="image/svg+xml" href={`${isDark ? 'dark' : 'light'}.svg`} />
       </Helmet>
       <h1 id='hitokoto' onClick={update}>
         {hitokoto?.hitokoto}
