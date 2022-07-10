@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="0.0.3"></a>
+## 0.0.3 (2022-07-10)
+
+### Changed
+
+- 🎨 Dynamic icon [[dc811da](https://github.com/echoeureka/hitokoto/commit/dc811daf7ecc338c8820969b29ee6bcdb378da6e)]
+
+### Miscellaneous
+
+- 📦 v0.0.3 [[1ce25c7](https://github.com/echoeureka/hitokoto/commit/1ce25c7a0b5a04074166beaec9cbcd5a45c51e2f)]
+
+
 <a name="0.0.2"></a>
 ## 0.0.2 (2022-07-05)
 
