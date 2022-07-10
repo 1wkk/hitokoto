@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="0.0.4"></a>
+## 0.0.4 (2022-07-10)
+
+### Removed
+
+- 🔥 deprecated [[6f12d09](https://github.com/echoeureka/hitokoto/commit/6f12d09df0d86d49dbf2d030aba9890dbe48b201)]
+
+### Fixed
+
+- 🐛 build stream [[b843203](https://github.com/echoeureka/hitokoto/commit/b843203971505abb9a02eb08f7edecd76e8ec3de)]
+
+### Miscellaneous
+
+- 📦 v0.0.4 [[b2c74f5](https://github.com/echoeureka/hitokoto/commit/b2c74f50774de1c2d32494cc46e0f02f46a744be)]
+
+
 <a name="0.0.3"></a>
 ## 0.0.3 (2022-07-10)
 
