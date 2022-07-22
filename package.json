@@ -1,7 +1,8 @@
 {
   "name": "hitokoto",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "displayName": "Hitokoto",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

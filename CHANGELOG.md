@@ -1,7 +1,16 @@
 # Changelog
 
-<a name="0.0.4"></a>
-## 0.0.4 (2022-07-10)
+<a name="0.0.5"></a>
+## 0.0.5 (2022-07-22)
+
+### Added
+
+- 🔊 v0.0.4 [[a26bc17](https://github.com/echoeureka/hitokoto/commit/a26bc171c00de621d2e6255318104fa8cff701f1)]
+
+### Changed
+
+- 🍱 icon color upd [[7ab0e0f](https://github.com/echoeureka/hitokoto/commit/7ab0e0fd3ac6620bd8ec340ec8d774c0827d01e2)]
+- 🔧 support resolveJsonModule [[7252679](https://github.com/echoeureka/hitokoto/commit/7252679c571a40218e120d63e31c838fd688fc38)]
 
 ### Removed
 
