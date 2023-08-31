@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import usePreferredDark from './usePreferredDark'
 import { Helmet } from 'react-helmet'
+import Bookmarks from './Bookmarks'
 interface Hitokoto {
   hitokoto: string
   from: string
@@ -15,8 +16,8 @@ function App() {
 
   const update = () =>
     fetch('https://v1.hitokoto.cn/')
-      .then(response => response.json())
-      .then(data => setHitokoto(data))
+      .then((response) => response.json())
+      .then((data) => setHitokoto(data))
 
   useEffect(() => {
     update()
@@ -25,19 +26,24 @@ function App() {
   return (
     <div className={`app ${isDark ? 'dark' : ''}`}>
       <Helmet>
-        <link rel="icon" type="image/svg+xml" href={`${isDark ? 'dark' : 'light'}.svg`} />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`${isDark ? 'dark' : 'light'}.svg`}
+        />
       </Helmet>
-      <h1 id='hitokoto' onClick={update}>
+      <Bookmarks />
+      <h1 id="hitokoto" onClick={update}>
         {hitokoto?.hitokoto}
       </h1>
-      <div className='author'>
-        — <span id='from_who'>{hitokoto?.from_who}</span>「
-        <span id='from'>{hitokoto?.from}</span>」
+      <div className="author">
+        — <span id="from_who">{hitokoto?.from_who}</span>「
+        <span id="from">{hitokoto?.from}</span>」
       </div>
       <footer>
         Powered by
         <br />
-        <a href='https://hitokoto.cn/'>Hitokoto.cn</a>
+        <a href="https://hitokoto.cn/">Hitokoto.cn</a>
       </footer>
     </div>
   )

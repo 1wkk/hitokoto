@@ -7,14 +7,15 @@ const manifest: ManifestV3Export = {
   name,
   version,
   chrome_url_overrides: {
-    newtab: 'index.html'
+    newtab: 'index.html',
   },
   icons: {
     '16': 'icon.png',
     '32': 'icon.png',
     '48': 'icon.png',
-    '128': 'icon.png'
-  }
+    '128': 'icon.png',
+  },
+  permissions: ['bookmarks'],
 }
 
 export default manifest

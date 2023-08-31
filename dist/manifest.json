@@ -10,5 +10,12 @@
     "32": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
   }
 }
