@@ -20,4 +20,4 @@
 
 ## License
 
-[GNU GPLv3](./license) License © 2022 [Eureka](https://github.com/echoeureka)
+[GNU GPLv3](./license) License © 2022 [Kyokutō](https://github.com/kyokuto)
